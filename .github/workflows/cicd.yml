@@ -7,7 +7,6 @@
 # documentation.
 
 name: Cicd Pipeline
-
 on:
   push:
     branches: [ "main" ]
