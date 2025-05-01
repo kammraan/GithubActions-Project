@@ -102,11 +102,11 @@ jobs:
     runs-on: self-hosted
     needs:  build_project_and_sonar_scan
     steps:
-     
-       uses: actions/setup-java@v4
-       - name: Download Jar Artifact
-         uses: actions/download-artifact@4
-       with:
+    - uses: actions/setup-java@v4
+    - name: Download Jar Artifact
+    
+      uses: actions/download-artifact@4
+      with:
         name: app-jar
         path: app # this will download JAR to ./app folder
 
